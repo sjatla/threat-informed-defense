@@ -27,7 +27,7 @@ This repo documents the methodology, not the organization.
 
 ### What it has delivered
 
-*System-level results. Individual incidents are not described here.*
+*System-level results. Incidents are described only in general terms, without dates, systems or other identifying detail.*
 
 - **Stopped earlier in the attack chain.** In the intrusions handled since the loop has been running, the attacker was stopped before credential access in most cases and at credential access in the rest. No ransomware deployment, lateral movement or data theft was observed in any of them.
 - **Saw an attack coming.** In one case, decoy activity, dark-web movement and commercial intelligence pointed to the same internet-facing entry point. We modeled it as the likely way in and warned the owning team. The attack later came through that entry point and was stopped at credential access.
@@ -385,4 +385,4 @@ Every claim in this program is bounded by five distinctions, and the repo keeps 
 
 ## License
 
-This work is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt it with credit to Shitesh Jatla.
+© 2026 Shitesh Jatla. All rights reserved. Shared for reading; please ask before reusing.
