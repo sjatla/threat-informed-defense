@@ -380,3 +380,9 @@ Every claim in this program is bounded by five distinctions, and the repo keeps 
 | Achieved vs planned | Predictive in practice, not yet measured; V4 emulation and V5 purple-team validation are planned or in testing, not achieved; MTTD isn't measured yet |
 | Assessed vs certified | Level 3 is the program's own maturity assessment, not an external certification |
 | Correlated vs causal | Awareness results across two campaigns are observational, with different targets and denominators |
+
+---
+
+## License
+
+This work is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt it with credit to Shitesh Jatla.
