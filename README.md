@@ -1,8 +1,8 @@
 # Threat-Informed Defense (TID) System
 
-*A threat-informed defense program built from zero in a healthcare/MedTech organization, and run by a team of two.*
+*A threat-informed defense program built from zero in a Healthcare/MedTech organization, and run by a team of two.*
 
-Shitesh Jatla · Threat Hunting & Forensic Lead · Nov 2026
+Shitesh Jatla · Threat Hunting & Forensics Lead · Nov 2026
 
 > **How to read this**
 > - **2 minutes:** Part 1. What it is, what it has delivered, and the system in one picture.
