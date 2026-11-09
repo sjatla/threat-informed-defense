@@ -64,8 +64,8 @@ Read the picture top to bottom:
 
 | Stage | When | What it looked like | What moved it on |
 | --- | --- | --- | --- |
-| Reactive | Before late 2021 | Suspicious machines were reformatted, not investigated | Nobody was investigating |
-| Proactive | Years 1–3 | Hunting matured along the Hunting Maturity Model | Hunting found things, but if the rest of the organization didn't act on them, little changed |
+| Reactive | Before late 2021 | Suspicious machines were reimaged to restore service quickly | Investigation wasn't yet anyone's role |
+| Proactive | Years 1–3 | Hunting matured along the Hunting Maturity Model | Hunt findings needed a clear path to the teams that could act on them |
 | Threat-informed | Years 3–5 | Defense aligned to the attackers most likely to target the organization, instead of defending everything. Matured against MITRE's threat-informed defense model, with D3FEND brought in to build out defensive measures, the weakest dimension | Knowing who was coming raised the next question: can we see them before they arrive? |
 | Toward predictive | Now | Converging signals and deep actor profiles point to who is coming, how, and through which entry point, before compromise | Predictions aren't measured yet, and internal intelligence is incomplete |
 
@@ -250,7 +250,7 @@ The tradecraft clusters are the backbone: the same playbooks feed hunting, incid
 ### 8. Incident response
 
 - **Trigger:** an Anchor alert, a hunt finding past escalation criteria, an exposure that becomes an incident candidate, or an intelligence item marked *Incident support*
-- **Method:** every investigation runs in two directions at once. The lead hunter works **forward**: where the attacker is now, and what their likely next move is according to the tradecraft playbooks, so it can be stopped. The analyst works **backward**: what the attacker has already done, established from the evidence. The threat-informed IR workflow guides both directions, so neither stops when one tool closes an alert. Escalate without waiting for certainty; scope with telemetry and topology; isolate, contain and evict; keep observed and inferred apart. Attribution, inside the same workflow, always carries a confidence level. If the response to a credible compromise is disputed, it goes up the leadership path with the evidence on record
+- **Method:** every investigation runs in two directions at once. The lead hunter works **forward**: where the attacker is now, and what their likely next move is according to the tradecraft playbooks, so it can be stopped. The analyst works **backward**: what the attacker has already done, established from the evidence. The threat-informed IR workflow guides both directions, so neither stops when one tool closes an alert. Escalate without waiting for certainty; scope with telemetry and topology; isolate, contain and evict; keep observed and inferred apart. Attribution, inside the same workflow, always carries a confidence level. Response decisions on a credible compromise are escalated through the leadership path with the evidence on record. 
 - **Gate:** only incident response declares an incident; attribution goes through a confidence review; hunt and incident records are linked both ways
 - **Output:** lessons back to intelligence, including actor reassessment when attribution warrants it; new detections to detection engineering; hardening changes to hardening; governance gaps
 
