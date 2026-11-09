@@ -17,7 +17,7 @@ Shitesh Jatla · Threat Hunting & Forensics Lead · Nov 2026
 
 ### In one minute
 
-In October 2021 I joined a healthcare/MedTech organization as its first threat hunter. There was no hunter or responder, and a suspicious machine was usually reformatted rather than investigated. In healthcare, that gap matters: the systems at risk support the people who make and deliver patient care.
+In October 2021 I joined a healthcare/MedTech organization as its first threat hunter. There was no hunter or responder yet, and the priority with a suspicious machine was getting it back in service quickly, so it was reimaged. In healthcare, that gap matters: the systems at risk support the people who make and deliver patient care.
 
 Over five years I designed and built one connected program to close it, and moved it from reactive, to proactive hunting, to threat-informed defense aimed at the attackers most likely to target the organization. It is now moving toward predictive. Intelligence decides what to defend against. Hardening blocks what can be blocked, and detection covers the rest. Hunting and incident response catch what slips through, and validation tests whether the defenses actually work. I lead the program and work with one analyst, supported by AI workflows. By the program's own assessment it reached Level 3 on the five-level Hunting Maturity Model (HM0–HM4), with Level 4 in progress.
 
