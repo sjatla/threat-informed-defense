@@ -19,7 +19,7 @@ Shitesh Jatla · Threat Hunting & Forensics Lead · Nov 2026
 
 In October 2021 I joined a healthcare/MedTech organization as its first threat hunter. There was no hunter or responder yet, and the priority with a suspicious machine was getting it back in service quickly, so it was reimaged. In healthcare, that gap matters: the systems at risk support the people who make and deliver patient care.
 
-Over five years I designed and built one connected program to close it, and moved it from reactive, to proactive hunting, to threat-informed defense aimed at the attackers most likely to target the organization. It is now moving toward predictive. Intelligence decides what to defend against. Hardening blocks what can be blocked, and detection covers the rest. Hunting and incident response catch what slips through, and validation tests whether the defenses actually work. I lead the program and work with one analyst, supported by AI workflows. By the program's own assessment it reached Level 3 on the five-level Hunting Maturity Model (HM0–HM4), with Level 4 in progress.
+Over five years I designed and built one connected program to close it, and moved it from reactive, to proactive hunting, to threat-informed defense aimed at the attackers most likely to target the organization. It is now moving toward predictive. Intelligence decides what to defend against. Hardening blocks what can be blocked, and detection covers the rest. Hunting and incident response catch what slips through, and validation tests whether the defenses actually work. I lead the program and work with one analyst, supported by AI workflows. By the program's own assessment it reached HMM Level 3 on David Bianco's Hunting Maturity Model, scored with a six-level checklist I built (Levels 0–5), with Level 4 in progress. Three Level 3 items stay open: two telemetry-coverage items that wait on budget decisions outside the program, and dwell-time measurement, which is in progress.
 
 Along the way I authored a multi-year maturity roadmap reported to leadership, and three of the four operating standards behind the program's governance framework, which has been formally approved.
 
@@ -65,7 +65,7 @@ Read the picture top to bottom:
 | Stage | When | What it looked like | What moved it on |
 | --- | --- | --- | --- |
 | Reactive | Before late 2021 | Suspicious machines were reimaged to restore service quickly | Investigation wasn't yet anyone's role |
-| Proactive | Years 1–3 | Hunting matured along the Hunting Maturity Model | Hunt findings needed a clear path to the teams that could act on them |
+| Proactive | Years 1–3 | Hunting matured along David Bianco's Hunting Maturity Model, scored with a checklist I built | Hunt findings needed a clear path to the teams that could act on them |
 | Threat-informed | Years 3–5 | Defense aligned to the attackers most likely to target the organization, instead of defending everything. Matured against MITRE's threat-informed defense model, with D3FEND brought in to build out defensive measures, the weakest dimension | Knowing who was coming raised the next question: can we see them before they arrive? |
 | Toward predictive | Now | Converging signals and deep actor profiles point to who is coming, how, and through which entry point, before compromise | Predictions aren't measured yet, and internal intelligence is incomplete |
 
@@ -305,7 +305,7 @@ AI and automation scale the work; these decisions stay with people.
 
 The connected system is the contribution. Some methods are built directly on published work, marked *Built on* or *Adapted from*. Others were built for this program independently and later found to match published work, marked *Aligned with* or *Related*.
 
-**Built on, used deliberately:** MITRE CTID threat-informed defense (three dimensions, INFORM v2.0) · MITRE ATT&CK · MITRE D3FEND · MITRE Engage · Hunting Maturity Model (HM0–HM4 checklists) · Atomic Red Team · Caldera · SOC Prime (rule sourcing and the AI benchmark) · Binary Defense TIDE field guide and datasheet (2025): GOST threat modeling, hypothesis format, Detection-as-Code workflow, and fidelity, coverage, MTTD and drift metrics
+**Built on, used deliberately:** MITRE CTID threat-informed defense (three dimensions, INFORM v2.0) · MITRE ATT&CK · MITRE D3FEND · MITRE Engage · Hunting Maturity Model by David Bianco (Levels 0–4; I added Level 5 and wrote the 91-item checklist) · Atomic Red Team · Caldera · SOC Prime (rule sourcing and the AI benchmark) · Binary Defense TIDE field guide and datasheet (2025): GOST threat modeling, hypothesis format, Detection-as-Code workflow, and fidelity, coverage, MTTD and drift metrics
 
 #### Intelligence
 
@@ -325,7 +325,7 @@ The connected system is the contribution. Some methods are built directly on pub
 
 | Method | What it does | Status | Relation to published work |
 | --- | --- | --- | --- |
-| Maturity assessment and roadmap | Nine capability areas assessed; multi-year roadmap reported to leadership | In production | Built on: Hunting Maturity Model |
+| Maturity assessment and roadmap | 91-item checklist across six levels (0–5); a level counts as met at 75% of its items, with its defining items met; multi-year roadmap reported to leadership | In production | Built on: Hunting Maturity Model (Bianco) |
 | Intelligence-led hypotheses | Hypotheses generated from intelligence, mapped to ATT&CK, refined through feedback | In production | Aligned with: PEAK and TaHiTI (intel-driven hunting); CTID INFORM v2.0 Threat Hunting component |
 | Deception-assisted hunting | Deployed decoys used inside hunts | In production | — |
 | Intelligence-driven deception design | Decoy design and engagement driven by intelligence on targeted actors | Planned | Built on: MITRE Engage |
@@ -378,7 +378,7 @@ Every claim in this program is bounded by five distinctions, and the repo keeps 
 | Observed vs inferred | A probable entry point stays probable, and outcomes say what was observed, not what was prevented |
 | Deployed vs validated | Every recurring technique has a deployed rule; at least 60% have a rule validated to V3 |
 | Achieved vs planned | Predictive in practice, not yet measured; V4 emulation and V5 purple-team validation are planned or in testing, not achieved; MTTD isn't measured yet |
-| Assessed vs certified | Level 3 is the program's own maturity assessment, not an external certification |
+| Assessed vs certified | HMM Level 3 is the program's own assessment, scored with my checklist: a level counts as met at 75% of its items, with all of its defining items met and every open item named. No external body certifies it |
 | Correlated vs causal | Awareness results across two campaigns are observational, with different targets and denominators |
 
 ---
